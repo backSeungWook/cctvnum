@@ -1,6 +1,6 @@
 /*Header*/
 header .inner{
-  height: 165px;
+  height: 170px;
 }
 header .sub-main{
   position:absolute;
@@ -36,6 +36,9 @@ header .but-group{
 header .but-group .btn:last-child{
   margin-right: 0;
 }
+header .txtgroup{
+  margin-bottom: 5px;
+}
 
 .combo{
   position:relative;
@@ -61,7 +64,7 @@ header .but-group .btn:last-child{
 
 .main{
   position: relative;
-  margin-top: 166px;
+  margin-top: 171px;
   background-color: #fcfcfc;
 }
 .main .inner{
@@ -75,11 +78,9 @@ header .but-group .btn:last-child{
 .table .thead{
   background-color:#f2f3f7;
   font-size:16px;
-  
-  
   height: 40px;
   font-weight:700;
-  
+
 }
 .table .thead>th{
   border-radius: 25px;
@@ -90,7 +91,6 @@ table.dataTable thead .sorting,
 table.dataTable thead .sorting_desc,
 table.dataTable thead .sorting_asc
 {
-  
   cursor: pointer;
   background-repeat: no-repeat;
   background-position: center right;  
@@ -114,6 +114,19 @@ table.dataTable thead .sorting_desc {
   height: 50px;
 }
 
+.table .tcen .tbody .b_box1_1{
+  width: 35px;
+  height: 25px;
+  border:0px;
+  text-align: center;
+  background-color: rgba(0,0,0,.0);
+  font-size: 16px;
+  position: relative;
+  right: 1px;
+  top:1px;
+  
+}
+
 
 .table .tcen .tbody:nth-child(2n+2){
   background-color:#f5f5f5;
@@ -128,15 +141,17 @@ table.dataTable thead .sorting_desc {
 .table .tcen .tbody>th{
   box-sizing: border-box;  
   border-radius: 25px;
-/*  padding: 0px 0px 10px 0px;*/
-
+  
+  padding: 0px 0px 10px 0px;
   
 }
 .table .tcen .tbody .ischeck{
-  margin-top: auto;
   
   height: 25px;
   width: 25px;
+  position: relative;
+  top: 10px;
+  
   
 }
 

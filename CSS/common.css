@@ -16,6 +16,7 @@ header{
   border-bottom:1px solid #c8c8c8;
   position: fixed;
   top:0;
+  box-shadow: 2px 2px 8px rgba(0, 0,0, .1);
   z-index: 9;
 }
 .btn.btn--default{
@@ -61,4 +62,5 @@ header{
   background-color: #fff;
   color: #333;
 }
+
 
