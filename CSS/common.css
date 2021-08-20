@@ -1,0 +1,64 @@
+/*COMMON*/
+body{
+  background-color: #fff;
+  font-family: 'Nanum Gothic', sans-serif;
+}
+a{
+  text-decoration: none;
+}
+.inner {
+  margin:0px 10px 0px 10px;
+  position:relative;
+}
+header{
+  width: 100%;
+  background-color: #fff;
+  border-bottom:1px solid #c8c8c8;
+  position: fixed;
+  top:0;
+  z-index: 9;
+}
+.btn.btn--default{
+  width:20%;
+  padding:10px;
+  
+  border:2px solid cornflowerblue;
+  border-radius: 10px;
+  color: #333;
+  font-size:14px;
+  font-weight:700;
+  text-align: center;
+  cursor: pointer;
+  box-sizing: border-box;
+  display: block;
+  transition: .4s;
+  z-index: 4;
+}
+
+.btn.btn--default:hover{
+  background-color: cornflowerblue;
+  color: #fff;
+}
+
+.btn.btn--w{
+  width:33%;
+  padding:10px;
+  margin-right: 23px;
+  border:2px solid cornflowerblue;
+  background-color: cornflowerblue;
+  border-radius: 10px;
+  color: #fff;
+  font-size:14px;
+  font-weight:700;
+  text-align: center;
+  cursor: pointer;
+  box-sizing: border-box;
+  display: block;
+  transition: .4s;
+}
+
+.btn.btn--w:hover{
+  background-color: #fff;
+  color: #333;
+}
+

@@ -1,0 +1,160 @@
+/*Header*/
+header .inner{
+  height: 165px;
+}
+header .sub-main{
+  position:absolute;
+  top:10px;
+  width:100%;
+  display:flex;
+}
+header .sub-main .ser{
+  width: 80%;
+  height: 38px;
+  margin-right: 10px;
+  border: 1px solid cornflowerblue;
+  box-sizing:border-box;
+  border-radius: 5px;
+  outline: none;
+  background-color: #fff;
+  color:#777;
+  font-size:20px;
+  z-index: 4;
+}
+header .sub-main .ser:focus{
+  border-color:#669900;
+}
+
+header .but-group{
+  position:absolute;
+  top:10px;
+  width: 100%;
+  padding: 45px 0px 0px 0px;
+  z-index: 3;
+  display:flex;
+}
+header .but-group .btn:last-child{
+  margin-right: 0;
+}
+
+.combo{
+  position:relative;
+  padding-top: 100px;
+  z-index: 2;
+}
+.combo .selectbox{
+  
+  width: 100%;
+  height: 30px;
+  outline: none;
+  color:#777;
+  background-color: #fff;
+  box-sizing:border-box;
+  border-radius: 5px;
+  border-color: cornflowerblue;
+  
+}
+.combo .selectbox:focus{
+  border-color:#669900;
+}
+
+
+.main{
+  position: relative;
+  margin-top: 166px;
+  background-color: #fcfcfc;
+}
+.main .inner{
+  height:100%; 
+}
+
+
+
+/*테이블 헤더*/
+
+.table .thead{
+  background-color:#f2f3f7;
+  font-size:16px;
+  
+  
+  height: 40px;
+  font-weight:700;
+  
+}
+.table .thead>th{
+  border-radius: 25px;
+  box-sizing:border-box; 
+}
+/*table head sorting*/
+table.dataTable thead .sorting,
+table.dataTable thead .sorting_desc,
+table.dataTable thead .sorting_asc
+{
+  
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-position: center right;  
+  box-sizing: border-box;
+  text-align: center;
+  padding: 10px;
+  font-weight:700;
+}
+
+table.dataTable thead .sorting {
+  background-image: url("https://cdn.datatables.net/1.10.23/images/sort_both.png");
+}
+table.dataTable thead .sorting_asc {
+  background-image: url("https://cdn.datatables.net/1.10.23/images/sort_asc.png");
+}
+table.dataTable thead .sorting_desc {
+  background-image: url("https://cdn.datatables.net/1.10.23/images/sort_desc.png");
+}
+.table .tcen .tbody{
+  border-bottom: 1px  solid #ccc;
+  height: 50px;
+}
+
+
+.table .tcen .tbody:nth-child(2n+2){
+  background-color:#f5f5f5;
+}
+
+.table .tcen .tbody:hover{
+  background-color:#ebebeb;
+  
+}
+
+
+.table .tcen .tbody>th{
+  box-sizing: border-box;  
+  border-radius: 25px;
+/*  padding: 0px 0px 10px 0px;*/
+
+  
+}
+.table .tcen .tbody .ischeck{
+  margin-top: auto;
+  
+  height: 25px;
+  width: 25px;
+  
+}
+
+
+table.dataTable{
+  width: 100%;
+  margin: 0 auto;
+  clear: both;
+  border-collapse: separate;
+  border-spacing: 0;
+   display: table;
+  width: 100%;
+}
+
+
+
+.dataTables_wrapper .dataTables_filter {
+  display:none;
+}
+
+
