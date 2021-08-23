@@ -1,0 +1,28 @@
+{
+  "name": "CCTV",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/backSeungWook/cctvnum.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/backSeungWook/cctvnum/issues"
+  },
+  "homepage": "https://github.com/backSeungWook/cctvnum#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21",
+    "v8": "^0.1.0"
+  }
+}
