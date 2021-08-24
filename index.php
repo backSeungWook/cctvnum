@@ -28,12 +28,14 @@
 
     $content = iconv("utf-8", "euc-kr", $content);
     $title = addslashes($_GET['title']);
-    $title  = iconv("utf-8", "euc-kr", $title );
+    //$title  = iconv("utf-8", "euc-kr", $title );
     $content_value = addslashes($_GET['content_value']);
   ?>
 </head>
 
 <body>
+
+  <!-- HEADER -->
   <header >
     <div class="inner">
       <div class="header-main">
@@ -78,27 +80,31 @@
     <div class="inner">
       <div class="table">
         <table class="table table-bordered table-bordered" id="ttable">
+          <!-- 테이블 헤더-->
           <thead>
             <tr class="thead">
-              <th width="22%" scope="col" >순번</th>
-              <th width="55%" scope="col">CCTV 이름</th>
+              <th width="18%" scope="col" >순번</th>
+              <th width="59%" scope="col">CCTV 이름</th>
               <th width="13%" scope="col">eqcd</th>
               <th width="10%" scope="col"></th>
             </tr>
           </thead>
-          <tbody class="tcen">
-          <?php
-            $sql="select cctvname,cctvid,eqcd,isService from gpspush.cctv_num  where title='전주' limit 50";
-	       // $sql="select cctvname,cctvid,eqcd,isService from gpspush.cctv_num where title='".$title."' and eqcd='".$content_value."' and isService='1' order by ABS(cctvid)";
-            $result = mysql_query($sql);
-            $getNumArr;
-            $getNumArr=explode(";", $content);
 
-            while($row = mysql_fetch_array($result)) {			
-          ?>
-          
+          <!--테이블 본문-->
+          <tbody class="tcen">
+            <?php
+              //$sql="select cctvname,cctvid,eqcd,isService from gpspush.cctv_num  where title='전주' limit 50";
+              $sql="select cctvname,cctvid,eqcd,isService from gpspush.cctv_num where title='".$title."' and eqcd='".$content_value."' and isService='1' order by ABS(cctvid)";
+              $result = mysql_query($sql);
+              $getNumArr;
+              $getNumArr=explode(";", $content);
+
+              while($row = mysql_fetch_array($result)) {			
+            ?>          
             <tr class="tbody">
-              <th data-sort='<?=$row['cctvid']?>'><input type="number" pattern="09[0-9]{9}" class="b_box1_1" id='content'  onfocus="select()" data='<?=$row['cctvid']?>' value="<?=sprintf('%02d',$row['cctvid'])?>" ></th>
+              <th data-sort='<?=$row['cctvid']?>'>
+                <input type="number" pattern="09[0-9]{9}" class="b_box1_1" id='content'  onfocus="select()" data='<?=$row['cctvid']?>' value="<?=sprintf('%02d',$row['cctvid'])?>" >
+              </th>
               <th><?=$row['cctvname']?></th>
               <th><?=preg_replace("/[^0-9]*/s", "", $row['eqcd']);?></th>
               <th class="chk">
@@ -109,9 +115,9 @@
                 <?}?>
               </th>
             </tr>
-          <?}?>
-            
+           <?}?>
           </tbody>
+
         </table>
       </div>
     </div>
@@ -122,5 +128,4 @@
   </div>
 
 </body>
-
 </html>

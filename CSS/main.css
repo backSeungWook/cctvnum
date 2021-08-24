@@ -178,7 +178,9 @@ table.dataTable thead .sorting_desc {
   right: 1px;
   top:1px;
   box-sizing: border-box;
-  
+}
+.table .tcen .tbody .b_box1_1:focus{
+  border-color:cornflowerblue;
 }
 
 .table .tcen .tbody:nth-child(2n+2){
