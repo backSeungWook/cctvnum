@@ -37,6 +37,7 @@
 <body>
 
   <!-- HEADER -->
+  <form name ="action1" action="./cctvnumTest2.php" method ="POST">
   <header >
     <div class="inner">
       <div class="header-main">
@@ -47,7 +48,7 @@
         <div class="but-group">
           <a href="javascript:void(0)" class="btn btn--w">CCTV 수정</a>
           <a href="javascript:void(0)" class="btn btn--w">CCTV 추가</a>
-          <a href="javascript:void(0)" class="btn btn--w">사용안함</a>
+          <a href="javascript:isServiceItem.nameChange()" class="btn btn--w" id="isService" >사용안함</a>
         </div> 
         <div class="combo">
           <select style="height: 40;" id ="content_value" name ="content_value1" class="selectbox">
@@ -123,7 +124,7 @@
       </div>
     </div>
   </section>
-
+  </form>
   <div id="to-top">
     <div class="material-icons">arrow_upward</div>
   </div>
