@@ -19,7 +19,8 @@
   },
   "homepage": "https://github.com/backSeungWook/cctvnum#readme",
   "devDependencies": {
-    "parcel-bundler": "^1.12.5"
+    "parcel-bundler": "^1.12.5",
+    "typescript": "^4.3.5"
   },
   "dependencies": {
     "lodash": "^4.17.21",
